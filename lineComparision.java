@@ -5,12 +5,24 @@ class lineComparision{
 		int x2=6;
 		int y1=3;
 		int y2=9;
-		double length=0;
-		double line1=Math.pow((x1-x2),2);
-		double line2=Math.pow((y1-y2),2);
-		length=Math.sqrt(line1+line2);
-		System.out.println("length of the line: "+length);
-
+		int x3=5;
+		int x4=7;
+		int y3=9;
+		int y4=8;
+		double length1=0;
+		double length2=0;
+		double x=Math.pow((x1-x2),2);
+		double y=Math.pow((y1-y2),2);
+		double p=Math.pow((x3-x4),2);
+		double q=Math.pow((y4-y3),2);
+		length1=Math.sqrt(x+y);
+		length2=Math.sqrt(p+q);
+		System.out.println("length of the line 2: "+length2);
+		System.out.println("length of the line 1: "+length1);
+		if(length1==length2)
+			System.out.println("2 lines are equal");
+		else
+			System.out.println("2 lines are not equal");
 
 	}
 }
